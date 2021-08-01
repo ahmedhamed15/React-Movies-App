@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(17, 16, 16);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+header {
+  padding: 10px 0;
+}
+header .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.col {
+  flex: 0 0 auto;
+}
+a {
+  text-decoration: none;
+}
+header img {
+  height: 50px;
+}
+header a {
+  color: white;
+  font-size: 18px;
+}

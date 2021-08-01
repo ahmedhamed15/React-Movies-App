@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(17, 16, 16);
+  font-family: 'tahoma', arial;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+header {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.col {
+  flex: 0 0 auto;
+}
+a {
+  text-decoration: none;
+}
+header img {
+  height: 50px;
+}
+header a {
+  color: white;
+  font-size: 18px;
+}
+header a:hover {
+  color: #FFB03D
+}
+.text-center {
+  text-align: center;
+}
+.search-content {
+  background: url('./images/home-bg.jpg') no-repeat center center fixed;
+  background-blend-mode: saturation;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search-content.sm-search-card {
+  height: 50vh;
+}
+.search-content h1 {
+  color: white;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+.search-content p {
+  color: #f1f1ff;
+  font-size: 20px;
+  width: 700px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.search-content input[type="search"] {
+  height: 55px;
+  width: 500px;
+  padding: 10px;
+  font-size: 18px;
+  color: #f5853f;
+  border: 1px solid #f5853f;
+}
+.search-content input[type="search"]:focus {
+  outline: 0;
+
+}
+.search-content .search-btn {
+  height: 55px;
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #f5853f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+::selection {
+  color: #FFF;
+  background-color: #f5853f;
+}
+.show-item {
+  height: 300px;
+  border: 1px solid #EEE;
+  margin-bottom: 20px;
+}
+.show-item {
+  object-fit: cever;
+}
+.show-item .show-item__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.show-item .show-item__overlay a {
+  color: white;
+  font-size: 22px;
+}
+.show-item .show-item__overlay a:hover {
+  color: #f5853f;
+}
